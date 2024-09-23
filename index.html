@@ -7,11 +7,10 @@
     <link rel="stylesheet" href="css\styles.css" />
   </head>
   <body>
+    <!-- navigation -->
     <header class="main-header">
       <!-- logo -->
       <div class="logo-icon"></div>
-
-      <!-- navigation -->
       <nav>
         <a href="#section-home">Home</a>
         <a href="#section-our-profile">Our Profile</a>
@@ -19,11 +18,11 @@
         <a href="#section-message-us">message Us</a>
       </nav>
     </header>
-
+    <!-- navigation end -->
     <hr />
 
+    <!-- home -->
     <main>
-      <!-- home -->
       <section id="section-home">
         <header>
           <h2>Hi User, welcome to my website</h2>
@@ -75,18 +74,59 @@
         <header>
           <h2>Message Us</h2>
         </header>
+        <section class="form-input">
+          <form>
+            <div class="input-group">
+              <label for="nama">Nama : </label>
+              <input type="text" id="nama" placeholder="masukan nama anda" />
+            </div>
 
-        <section>
-          <!-- form -->
-          <!-- <form action=""></form> -->
+            <br />
+            <div class="input-group">
+              <label for="tgl lahir">Tanggal Lahir : </label>
+              <input type="date" id="tgl lahir" />
+            </div>
+
+            <br />
+            <div class="input-group">
+              <label for="jenis kelamin">Jenis Kelamin</label>
+              <input type="radio" id="pria" name="jenis kelamin" /><label
+                for="pria"
+                >Pria</label
+              >
+              <input type="radio" id="wanita" name="jenis kelamin" /><label
+                for="wanita"
+                >Wanita</label
+              >
+            </div>
+
+            <br />
+            <div class="input-group">
+              <label for="pesan">Pesan : </label>
+              <textarea
+                name="pesan"
+                id="pesan"
+                placeholder="masukan pesan"
+              ></textarea>
+            </div>
+
+            <br />
+            <button>Submit</button>
+          </form>
 
           <!-- result form -->
-          <div></div>
+          <div class="pesan">
+            <table>
+              <th></th>
+            </table>
+          </div>
         </section>
       </section>
       <hr />
     </main>
+    <!-- home end -->
 
+    <!-- footer -->
     <footer class="footer">
       <p>
         Created with by
@@ -97,5 +137,6 @@
         >
       </p>
     </footer>
+    <!-- footer end -->
   </body>
 </html>

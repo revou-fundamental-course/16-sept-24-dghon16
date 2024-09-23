@@ -18,7 +18,7 @@ nav > a {
 .logo-icon {
   width: 50px;
   height: 50px;
-  background-image: url(../assets/Unsera.png);
+  background-image: url(https://upload.wikimedia.org/wikipedia/id/thumb/7/7a/Manchester_United_FC_crest.svg/1200px-Manchester_United_FC_crest.svg.png);
   background-size: cover;
   background-position: center;
   border-radius: 50%;
@@ -30,15 +30,15 @@ nav > a {
 
 .photo-banner {
   height: 480px;
-  background-image: url(../assets/bola.jpg);
-  background-position: center;
+  background-image: url(https://images7.alphacoders.com/127/1270775.jpg);
+  /* background-position: center; */
   background-size: cover;
 }
 
 .profile-icon {
-  width: 50px;
-  height: 50px;
-  background-image: url(https://picsum.photos/200);
+  width: 70px;
+  height: 70px;
+  background-image: url(https://upload.wikimedia.org/wikipedia/id/thumb/7/7a/Manchester_United_FC_crest.svg/1200px-Manchester_United_FC_crest.svg.png);
   background-size: cover;
   background-position: center;
   border-radius: 50%;
@@ -63,4 +63,30 @@ footer {
 .link-ig {
   text-decoration: none;
   color: black;
+}
+
+.form-input {
+  display: flex;
+  justify-content: space-around;
+}
+
+table {
+  border: 1px solid black;
+  height: 200px;
+  width: 300px;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button {
+  width: 100%;
 }
