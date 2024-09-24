@@ -9,7 +9,7 @@
 
 body {
   font-family: "poppins", sans-serif;
-  /* min-height: 2000px; */
+  min-height: 2000px;
 }
 
 .navbar {
@@ -39,7 +39,7 @@ body {
 }
 
 .navbar .navbar-nav a:hover {
-  color: black;
+  background-color: rgb(70, 17, 17);
 }
 
 /* Hero section */
@@ -70,82 +70,35 @@ body {
   color: rgba(221, 0, 0, 0.8);
 }
 
-/* .main-header {
+.text-h2 {
+  padding: 2rem 5%;
+}
+.our-profile .row {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-nav {
-  display: flex;
-}
-
-nav > a {
-  border: 1px solid;
-  padding: 8px;
-  color: black;
-  text-decoration: none;
-}
-
-.logo-icon {
-  width: 50px;
-  height: 50px;
-  background-image: url(https://upload.wikimedia.org/wikipedia/id/thumb/7/7a/Manchester_United_FC_crest.svg/1200px-Manchester_United_FC_crest.svg.png);
-  background-size: cover;
-  background-position: center;
-  border-radius: 50%;
-}
-
-.main-header {
-  display: flex;
-}
-
-.photo-banner {
-  height: 480px;
-  background-image: url(https://images7.alphacoders.com/127/1270775.jpg);
-  background-position: center;
-  background-size: cover;
-}
-
-.profile-icon {
-  width: 70px;
-  height: 70px;
-  background-image: url(https://upload.wikimedia.org/wikipedia/id/thumb/7/7a/Manchester_United_FC_crest.svg/1200px-Manchester_United_FC_crest.svg.png);
-  background-size: cover;
-  background-position: center;
-  border-radius: 50%;
-}
-
-.profile-icon-container {
-  display: flex;
-  justify-content: space-around;
-}
-
-.profile-icon-container > div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-footer {
-  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2rem;
   justify-content: center;
+  padding: 1rem 3%;
 }
 
-.link-ig {
-  text-decoration: none;
-  color: black;
+.our-profile .row .menu-card {
+  text-align: center;
+  padding-bottom: 2rem;
 }
 
-.form-input {
+.our-profile .row .menu-card img {
+  border-radius: 50%;
+  width: 50%;
+}
+
+.our-profile .row .menu-card .menu-card-tittle {
+  margin: 1rem auto 0.5rem;
+}
+
+.contact {
   display: flex;
   justify-content: space-around;
-}
-
-table {
-  border: 1px solid black;
-  height: 200px;
-  width: 300px;
+  margin-top: 2rem;
 }
 
 input[type="text"],
@@ -154,11 +107,23 @@ textarea {
   padding: 12px 20px;
   margin: 8px 0px;
   display: inline-block;
-  border: 1px solid #ccc;
+  border: 1px solid #000000;
   border-radius: 4px;
   box-sizing: border-box;
 }
-
 button {
   width: 100%;
-} */
+  height: 50px;
+  border: 1px solid;
+}
+
+button:hover {
+  background-color: rgba(221, 0, 0, 0.8);
+}
+
+.contact-isi {
+  border: 1px solid black;
+  height: 280px;
+  width: 500px;
+  border-radius: 4px;
+}
