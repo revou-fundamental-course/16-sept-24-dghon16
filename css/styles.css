@@ -1,4 +1,76 @@
-.main-header {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "poppins", sans-serif;
+  /* min-height: 2000px; */
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3%;
+  background-color: rgba(221, 0, 0, 0.8);
+  border-bottom: 1px solid rgba(28, 2, 2, 0.8);
+  /* position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999; */
+}
+
+.navbar img {
+  height: 50px;
+  width: 50px;
+}
+
+.navbar .navbar-nav a {
+  border: 1px solid;
+  padding: 7px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+.navbar .navbar-nav a:hover {
+  color: black;
+}
+
+/* Hero section */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: url(https://images3.alphacoders.com/127/1270787.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.hero .content {
+  padding: 0.5rem 3%;
+  max-width: 60rem;
+}
+.hero .content h1 {
+  color: #fff;
+  font-size: 2em;
+  text-shadow: 5px 5px 3px rgba(28, 2, 2, 0.5);
+  line-height: 1.2;
+}
+.hero .content p {
+  color: #fff;
+}
+
+.hero .content h1 span {
+  color: rgba(221, 0, 0, 0.8);
+}
+
+/* .main-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -31,7 +103,7 @@ nav > a {
 .photo-banner {
   height: 480px;
   background-image: url(https://images7.alphacoders.com/127/1270775.jpg);
-  /* background-position: center; */
+  background-position: center;
   background-size: cover;
 }
 
@@ -89,4 +161,4 @@ textarea {
 
 button {
   width: 100%;
-}
+} */
