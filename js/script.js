@@ -1,8 +1,10 @@
+replaceName();
 function replaceName() {
-  let name = prompt("siapakah nama anda?", "");
-  document.getElementById("name").innerHTML = name;
+  let name = prompt("Masukan nama anda!");
+  console.log(name);
+  document.getElementById("user-name").innerHTML = name;
 }
 
-document.getElementById("tombol").addEventListener("click", function () {
-  replaceName();
-});
+// function validateForm(){
+// let inputName = document.getElementById("input-name").value
+// }

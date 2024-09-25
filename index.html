@@ -25,9 +25,8 @@
       />
       <div class="navbar-nav">
         <a href="#home">Home</a>
-        <a href="#our-profile">Our Profile</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#message-us">Message Us</a>
+        <a href="#our-profile">Our Tim</a>
+        <a href="#contact">Message Us</a>
       </div>
     </nav>
     <!-- navbar end -->
@@ -36,47 +35,56 @@
     <section class="hero" id="home">
       <main class="content">
         <div class="photo-banner"></div>
-        <h1>hallo <span>Dikri</span>, welcome to my website</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+        <h1>hallo <span id="user-name">Dikri</span>, We are United</h1>
+        <p>We're the boys in Red and we're on our way to Wem-ber-ly</p>
+        <p>Wem-ber-ly! Wem-ber-ly!</p>
+        <p>We're the famous Man United and we're going to Wem-ber-ly</p>
       </main>
     </section>
     <!-- Hero Section End -->
 
     <!-- menu section start -->
     <section id="our-profile" class="our-profile">
-      <h2 class="text-h2">Our Profile</h2>
+      <h2>Our Tim</h2>
       <div class="row">
         <div class="menu-card">
-          <img src="../asset/hojlund.jpg" alt="MU" class="menu-card-img" />
-          <h3 class="menu-card-tittle">Profile 1</h3>
+          <img src="../asset/hojlund.jpg" alt="Hojlund" class="menu-card-img" />
+          <h3 class="menu-card-tittle">Rasmus <span>Hojlund</span></h3>
         </div>
         <div class="menu-card">
-          <img src="../asset/hojlund.jpg" alt="MU" class="menu-card-img" />
-          <h3 class="menu-card-tittle">Profile 1</h3>
+          <img src="../asset/shaw.jpg" alt="shaw" class="menu-card-img" />
+          <h3 class="menu-card-tittle">Luke <span>Shaw</span></h3>
         </div>
         <div class="menu-card">
-          <img src="../asset/hojlund.jpg" alt="MU" class="menu-card-img" />
-          <h3 class="menu-card-tittle">Profile 1</h3>
+          <img src="../asset/bruno.jpg" alt="Bruno" class="menu-card-img" />
+          <h3 class="menu-card-tittle">Bruno <span>Fernandes</span></h3>
         </div>
         <div class="menu-card">
-          <img src="../asset/hojlund.jpg" alt="MU" class="menu-card-img" />
-          <h3 class="menu-card-tittle">Profile 1</h3>
+          <img
+            src="../asset/Rashford.jpg"
+            alt="Rashford"
+            class="menu-card-img"
+          />
+          <h3 class="menu-card-tittle">Marcus <span>Rashford</span></h3>
         </div>
         <div class="menu-card">
-          <img src="../asset/hojlund.jpg" alt="MU" class="menu-card-img" />
-          <h3 class="menu-card-tittle">Profile 1</h3>
+          <img
+            src="../asset/lisandro.jpg"
+            alt="lisandro"
+            class="menu-card-img"
+          />
+          <h3 class="menu-card-tittle">Lisandro <span>Martinez</span></h3>
         </div>
       </div>
     </section>
-    <br />
-    <br />
     <!-- menu section end -->
 
     <!-- contact start -->
-    <h2 class="text-h2">Message Us</h2>
-    <section class="contact" id="message-us">
-      <form class="form" action="message-form" onsubmit="return validateForm()">
-        Nama: <input placeholder="Nama" type="text" name="full-name" />
+    <h2>Message Us</h2>
+    <section class="contact" id="contact">
+      <form class="form" name="message-form" onsubmit="return false()">
+        Nama:
+        <input placeholder="Nama" type="text" name="full-name" />
         <br />
         Tanggal Lahir:
         <input type="date" name="birth-date" />
@@ -90,10 +98,12 @@
         <br />
 
         Pesan:
-        <textarea placeholder="pesan" name="message"></textarea>
+        <textarea placeholder="pesan" name="messages"></textarea>
         <br />
 
-        <button>Submit</button>
+        <button type="submit" value="button" onclick="addEventListener">
+          Submit
+        </button>
       </form>
 
       <div class="contact-isi">
@@ -106,18 +116,18 @@
       </div>
     </section>
     <!-- contact end -->
-    <hr />
+
     <!-- footer -->
     <footer class="footer">
-      <p>
-        Created with by
-        <a
-          class="link-ig"
-          href="https://www.instagram.com/dikrighaniyyu?igsh=OHdyajUzc3kxaTQx"
-          >Dikri Ghaniyyu Rahman</a
-        >
-      </p>
+      <p>Created with by :</p>
+      <a
+        class="link-ig"
+        href="https://www.instagram.com/dikrighaniyyu?igsh=OHdyajUzc3kxaTQx"
+        >Dikri Ghaniyyu Rahman</a
+      >
+      <span>| RevoU 2024</span>
     </footer>
     <!-- footer end -->
+    <script src="js/script.js"></script>
   </body>
 </html>
