@@ -11,6 +11,7 @@ body {
   font-family: "poppins", sans-serif;
 }
 
+/* navbar start */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -35,50 +36,55 @@ body {
 .navbar .navbar-nav a:hover {
   background-color: rgb(70, 17, 17);
 }
+/* navbar end */
 
-/* Hero section */
+/* photo banner start */
 .hero {
   min-height: 100vh;
-  display: flex;
-  /* align-items: center; */
-  background-image: url(../asset/1.jpg);
+  /* display: flex;
+  align-items: center; */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
+.liders {
+  width: 100%;
+  height: 100vh;
+}
+
+.slider img {
+  width: 100%;
+}
+
 .hero .content {
-  padding: 0.5rem 3%;
+  padding: 0.5rem 2%;
   max-width: 60rem;
 }
 
-/* .hero .transparansi {
-  width: 30rem;
-  height: 10rem;
-  background-color: #000000;
-  opacity: 0.3;
-} */
-
 .hero .content h1 {
-  color: #fff;
+  color: #000000;
   font-size: 2em;
   text-shadow: 5px 5px 3px rgba(28, 2, 2, 0.5);
   line-height: 1.2;
 }
+
 .hero .content p {
-  color: #fff;
+  color: #000000;
 }
 
-.hero .content h1 span {
+.hero .content span {
   color: rgba(221, 0, 0, 0.8);
 }
+/* photo banner end */
 
+/* photo bulat start */
 .our-profile .row {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 0.5rem;
+  /* margin-top: 0.5rem; */
   justify-content: center;
-  padding: 1rem 3%;
+  padding: 1rem 1%;
 }
 
 .our-profile h2,
@@ -104,7 +110,9 @@ h2 {
 .our-profile .row .menu-card .menu-card-tittle span {
   color: rgba(221, 0, 0, 0.8);
 }
+/* photo bulat end */
 
+/* form validation start */
 .contact {
   display: flex;
   justify-content: space-around;
@@ -121,6 +129,7 @@ textarea {
   border-radius: 4px;
   box-sizing: border-box;
 }
+
 button {
   width: 100%;
   height: 50px;
@@ -140,7 +149,9 @@ button:hover {
   margin-bottom: 100px;
   padding: 50px;
 }
+/* form validation end */
 
+/* footer start */
 .footer {
   background-color: rgba(221, 0, 0, 0.8);
   text-align: center;
@@ -157,4 +168,30 @@ button:hover {
 
 .footer .link-ig:hover {
   color: rgb(70, 17, 17);
+}
+/* footer end */
+
+/* latihan 4 */
+.container-empat {
+  max-width: 800px;
+  margin: 50px auto;
+}
+
+.card {
+  border: 1px solid #aaa;
+  border-radius: 10px;
+  background-color: #eee;
+  overflow: hidden;
+  margin: 10px;
+  flex: 1;
+}
+
+.card .header {
+  height: 150px;
+  background-color: #666;
+}
+
+.card .content {
+  text-align: center;
+  padding-bottom: 20px;
 }

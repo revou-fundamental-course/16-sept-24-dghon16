@@ -1,12 +1,13 @@
-// validasi nama
-// replaceName();
+// awal validasi nama
+replaceName();
 function replaceName() {
   let name = prompt("Masukan nama anda!");
   console.log(name);
   document.getElementById("user-name").innerHTML = name;
 }
+// akhir validasi nama
 
-// validasi form kontak
+// awal validasi form kontak
 function validateMessage() {
   const name = document.forms["message-form"]["full-name"].value;
   const birthdate = document.forms["message-form"]["birth-date"].value;
@@ -28,3 +29,22 @@ function setSenderUI(name, birthdate, gender, messages) {
   document.getElementById("sender-gender").innerHTML = gender;
   document.getElementById("sender-messages").innerHTML = messages;
 }
+// akhir validasi form kontak
+
+// awal banner otomatis
+let start = 0;
+otomatis();
+function otomatis() {
+  const sliders = document.querySelectorAll(".slider");
+  for (let i = 0; i < sliders.length; i++) {
+    sliders[i].style.display = "none";
+  }
+  if (start >= sliders.length) {
+    start = 0;
+  }
+  sliders[start].style.display = "block";
+  console.log("gambar ke" + start);
+  start++;
+  setTimeout(otomatis, 2000);
+}
+// akhir banner otomatis
