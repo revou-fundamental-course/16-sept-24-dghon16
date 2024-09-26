@@ -33,9 +33,10 @@
 
     <!-- Hero Section Start -->
     <section class="hero" id="home">
+      <div class="transparansi"></div>
       <main class="content">
         <div class="photo-banner"></div>
-        <h1>hallo <span id="user-name">Dikri</span>, We are United</h1>
+        <h1>hallo <span id="user-name"></span>, We are United</h1>
         <p>We're the boys in Red and we're on our way to Wem-ber-ly</p>
         <p>Wem-ber-ly! Wem-ber-ly!</p>
         <p>We're the famous Man United and we're going to Wem-ber-ly</p>
@@ -82,28 +83,27 @@
     <!-- contact start -->
     <h2>Message Us</h2>
     <section class="contact" id="contact">
-      <form class="form" name="message-form" onsubmit="return false()">
+      <form class="form" name="message-form" onsubmit="return false" ;>
         Nama:
-        <input placeholder="Nama" type="text" name="full-name" />
+        <input type="text" name="full-name" />
         <br />
+
         Tanggal Lahir:
         <input type="date" name="birth-date" />
         <br />
 
         Jenis Kelamin:
-        <input type="radio" id="male" name="gender" value="male" />
+        <input type="radio" id="male" name="gender" value="Laki-laki" />
         <label for="male">Laki-laki</label>
-        <input type="radio" id="female" name="gender" value="female" />
+        <input type="radio" id="female" name="gender" value="Perempuan" />
         <label for="female">Perempuan</label>
         <br />
 
         Pesan:
-        <textarea placeholder="pesan" name="messages"></textarea>
+        <textarea placeholder="pesan" name="messages"> </textarea>
         <br />
 
-        <button type="submit" value="button" onclick="addEventListener">
-          Submit
-        </button>
+        <button type="submit" onclick="validateMessage()">Submit</button>
       </form>
 
       <div class="contact-isi">
